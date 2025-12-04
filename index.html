@@ -41,6 +41,7 @@
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <a href="#resume" onclick="showResume()">Resume</a>
             <a href="#contact-form">Contact</a>
         </nav>
         
@@ -63,12 +64,12 @@
             <h1 class="typing-text"><span class="typed-name"></span></h1>
             
             <div class="animated-roles">
-                <div class="role-item">Competitive Programmer</div>
-                <div class="role-item role-blue">Aspiring Software Engineer</div>
+                <div class="role-item typing">Competitive Programmer / <span class="role-blue">Aspiring Software Engineer</span></div>
+                <div class="inspiring-quote">"Your greatest algorithm is your mindset — optimize it daily."</div>
             </div>
 
             <div class="btn-box">
-                <a href="Raghuram_resume_updated (1).pdf" class="btn-resume" download="Raghuram_resume.pdf"><i class='bx bx-download'></i> Download Resume</a>
+                <a href="#" class="btn-secondary" id="resume-btn">Resume</a>
                 <a href="#projects" class="btn-secondary">View Projects</a> 
             </div>
             <div class="social-media">
@@ -230,6 +231,16 @@
                         <a href="#" class="project-link">GitHub</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume-section" style="display: none; min-height: 100vh; padding: 5rem 5%; background: #111; text-align: center;">
+        <h2 style="color: #fff; margin-bottom: 2rem;">My <span style="color: #00d4ff;">Resume</span></h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <iframe id="resume-iframe" src="" style="width: 100%; height: 600px; border: 2px solid #00d4ff; border-radius: 10px; display: none;"></iframe>
+            <div style="margin-top: 2rem;">
+                <a href="Raghuram_resume_updated (1).pdf" class="btn-resume" download="Raghuram_resume.pdf" style="background: linear-gradient(45deg, #00d4ff, #0099cc); color: #fff; border: none;"><i class='bx bx-download'></i> Download Resume</a>
             </div>
         </div>
     </section>
