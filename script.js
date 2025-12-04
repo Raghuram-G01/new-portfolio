@@ -54,3 +54,35 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Toggle chatbot function
+function toggleChatbot() {
+    // Create and show chatbot iframe directly
+    let chatbotFrame = document.getElementById('chatbot-frame');
+    
+    if (!chatbotFrame) {
+        chatbotFrame = document.createElement('iframe');
+        chatbotFrame.id = 'chatbot-frame';
+        chatbotFrame.src = 'https://www.chatbase.co/embed/OeXcHJZ_o3EdxXVLvT_ZG';
+        chatbotFrame.style.cssText = `
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 400px;
+            height: 600px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            z-index: 10000;
+            display: none;
+        `;
+        document.body.appendChild(chatbotFrame);
+    }
+    
+    // Toggle visibility
+    if (chatbotFrame.style.display === 'none') {
+        chatbotFrame.style.display = 'block';
+    } else {
+        chatbotFrame.style.display = 'none';
+    }
+}
